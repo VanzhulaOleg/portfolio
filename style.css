@@ -39,10 +39,13 @@ h3 {
 }
 
 .title {
-	color: var(--nero);
+	/* color: var(--nero); */
 	font: 500 50px var(--title);
 	margin: 0 0 70px;
 	text-align: center;
+}
+.title:not(.title_current-color) {
+	color: var(--nero);
 }
 
 .title__description {
@@ -277,6 +280,121 @@ a.a[class] {
 	.menu-button {
 		display: none;
 	}
+}
+.life {
+	background: var(--nero) url('./images/life-bg-sm.png') no-repeat center;
+	background-size: cover;
+	color: var(--white);
+	padding: 80px 0;
+}
+
+@media (min-width: 1024px) {
+	.life {
+		background-image: url('./images/life-bg-lg.jpg');
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+	.life {
+		background-image: url('./images/life-bg-md.jpg');
+	}
+}
+
+.life__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.life__info {
+	display: flex;
+	flex-direction: column;
+	width: calc(100% / 2);
+}
+
+@media (max-width: 767px) {
+	.life__info {
+		margin-bottom: 65px;
+	}
+}
+
+@media (min-width: 768px) {
+	.life__content {
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: initial;
+		flex-wrap: wrap;
+	}
+	.life__info {
+		margin-bottom: 50px;
+	}
+}
+@media (min-width: 1024px) {
+	.life__content {
+		flex-wrap: initial;
+	}
+}
+
+.life__list {
+	font-size: 14px;
+	list-style: circle;
+	margin: 0;
+	max-height: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.life__radio:checked ~ .life__list {
+	max-height: 200px;
+	overflow: auto;
+	/* transition: all 0.3s; */
+}
+
+.life__title {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	margin-top: 38px;
+	font-size: 24px;
+	font-family: 'Dosis';
+	line-height: 1.2;
+}
+
+.life__title-text {
+	text-decoration-style: dotted;
+	text-decoration: underline;
+}
+
+.life__icon {
+	transition: all 0.3s;
+	align-self: center;
+}
+
+.life__radio {
+	display: none;
+}
+
+.life__radio:checked ~ .life__title .life__icon {
+	transform: rotate(180deg);
+}
+
+.life__item {
+	margin-top: 20px;
+}
+
+.life__item-title {
+	font-size: 16px;
+	font-family: 'Dosis';
+	line-height: 1.2;
+}
+
+.life__item-description {
+	font-size: 13px;
+	font-family: 'OpenSans';
+	line-height: 1.2;
 }
 
 .hobby {
