@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Skiff | Front-End розробник</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Open+Sans:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./fonts/blogger-sans/bloggersans.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="welcome">
+			<div class="welcome__content">
+				<div class="welcome__title">Привіт!</div>
+				<div class="welcome__description">
+					Радий тебе бачити. Будь-ласка введи своє ім'я:
+				</div>
+				<form action="" class="welcome__form">
+					<input
+						type="text"
+						class="welcome__input"
+						placeholder="Введи своє ім'я..."
+						aria-label="Ввести своє ім'я"
+					/>
+					<button class="welcome__button">submit</button>
+				</form>
+			</div>
+			<a
+				href="#header"
+				class="welcome__next material-icons"
+				aria-label="Перейти до основної частини"
+				title="Перейти до основної частини"
+			>
+				keyboard_arrow_down
+			</a>
+		</div>
+		<header id="header" class="header">
+			<div class="header__container">
+				<div class="logo">
+					<img src="./images/logo.png" alt="" class="logo__img" />
+					<span class="logo__text">
+						<span class="logo__name">Skiff</span>
+						<span class="logo__position">front-end розробник</span>
+					</span>
+				</div>
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#skills" class="menu__link">Навички</a>
+						</li>
+						<li class="menu__item">
+							<a href="#life" class="menu__link">Моє життя</a>
+						</li>
+						<li class="menu__item">
+							<a href="#hobbies" class="menu__link">Вподобання</a>
+						</li>
+						<li class="menu__item">
+							<a href="#contact" class="menu__link">Контакти</a>
+						</li>
+						<li class="menu__item">
+							<a href="#portfolio" class="menu__link">Мої роботи</a>
+						</li>
+					</ul>
+				</nav>
+				<button
+					class="menu-button material-icons"
+					aria-label="Відкрити меню"
+					title="Відкрити меню"
+				>
+					menu
+				</button>
+			</div>
+		</header>
+		<main class="main">
+			<div class="main__container">
+				<div class="title">
+					Hi John Doe!
+					<span class="title__description"
+						>Welcome to my world! My name is Leonid. And it's all about
+						me.</span
+					>
+				</div>
+				<section class="skills">
+					<div class="skills__content">
+						<h1 class="skills__title">
+							My skills
+							<span class="skills__description"
+								>and professional knowledge</span
+							>
+						</h1>
+						<div class="skill skill_purple">
+							<div class="skill__title">HTML</div>
+							<ul class="skill__list">
+								<li class="skill__item">
+									HTML5, XHTML, Cross Browser and Cross Platfom solutions,
+									Semantic, Validate Responsive Web Design, SEO html-makeup
+								</li>
+							</ul>
+						</div>
+						<div class="skill skill_blue">
+							<div class="skill__title">CSS</div>
+							<ul class="skill__list">
+								<li class="skill__item">
+									CSS 2.1, CSS3, Sass (Compass), Less, CSS-sprites, Font icons
+								</li>
+							</ul>
+						</div>
+						<div class="skill skill_red">
+							<div class="skill__title">JS</div>
+							<ul class="skill__list">
+								<li class="skill__item">JQuery, Integration of JS-plugins</li>
+							</ul>
+						</div>
+						<div class="skill">
+							<div class="skill__title">Other Skills</div>
+							<ul class="skill__list">
+								<li class="skill__item">
+									Usability, Creating mockups and prototypes site
+								</li>
+								<li class="skill__item">Adobe Photoshop, Adobe Illustrator</li>
+								<li class="skill__item">CMS WordPress, CMS OpenCart</li>
+								<li class="skill__item">
+									Create crossPlatform nice looking newsletters, Implement them
+									to Unisender
+								</li>
+								<li class="skill__item">Creating a multilingual site, Emmet</li>
+								<li class="skill__item">Integrating HTML-templates in CMS</li>
+								<li class="skill__item">
+									The ability to read other people's code
+								</li>
+								<li class="skill__item">
+									I think that something else is, just what I do not remember
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="skills__image">
+						<picture class="skills__picture">
+							<source
+								media="(min-width: 1024px)"
+								srcset="./images/head-lg.jpg"
+							/>
+							<source
+								media="(min-width: 768px) and (max-width: 1023px)"
+								srcset="./images/head-md.jpg"
+							/>
+							<img class="skills__image" src="./images/head.jpg" alt="" />
+						</picture>
+					</div>
+				</section>
+			</div>
+			<section class="life">
+				<div class="life__container">
+					<h2 class="title">
+						Education and Employment
+						<span class="title__description"
+							>Мой образовательный и профессиональный опыт средней школы до
+							нынешней работе.</span
+						>
+					</h2>
+					<div class="life__content">
+						<div class="life__info">
+							<img src="./images/icon-hat.png" alt="" class="life__icon" />
+							<input
+								type="radio"
+								id="lifeSchool"
+								class="life__radio"
+								name="life"
+							/>
+							<label for="lifeSchool" class="life__title"
+								>School and College
+								<i class="material-icons">expand_more</i></label
+							>
+							<ul class="life__list">
+								<li class="life__item">Lorem, ipsum dolor.</li>
+								<li class="life__item">Lorem ipsum dolor sit.</li>
+								<li class="life__item">Lorem, ipsum dolor.</li>
+							</ul>
+						</div>
+						<div class="life__info">
+							<img src="./images/icon-place.png" alt="" class="life__icon" />
+							<input
+								type="radio"
+								id="lifeStages"
+								class="life__radio"
+								name="life"
+							/>
+							<label for="lifeStages" class="life__title"
+								>Montage of Stages
+								<i class="material-icons">expand_more</i></label
+							>
+							<ul class="life__list">
+								<li class="life__item">Lorem, ipsum dolor.</li>
+								<li class="life__item">Lorem ipsum dolor sit.</li>
+								<li class="life__item">Lorem, ipsum dolor.</li>
+							</ul>
+						</div>
+						<div class="life__info">
+							<img src="./images/icon-wall.png" alt="" class="life__icon" />
+							<input
+								type="radio"
+								id="lifeBuilding"
+								class="life__radio"
+								name="life"
+							/>
+							<label for="lifeBuilding" class="life__title"
+								>Building <i class="material-icons">expand_more</i></label
+							>
+							<ul class="life__list">
+								<li class="life__item">Lorem, ipsum dolor.</li>
+								<li class="life__item">Lorem ipsum dolor sit.</li>
+								<li class="life__item">Lorem, ipsum dolor.</li>
+							</ul>
+						</div>
+						<div class="life__info">
+							<img src="./images/icon-laptop.png" alt="" class="life__icon" />
+							<input
+								type="radio"
+								id="lifeDevelopment"
+								class="life__radio"
+								name="life"
+								checked
+							/>
+							<label for="lifeDevelopment" class="life__title"
+								>Front end Developer
+								<i class="material-icons">expand_more</i></label
+							>
+							<ul class="life__list">
+								<li class="life__item">Lorem, ipsum dolor.</li>
+								<li class="life__item">Lorem ipsum dolor sit.</li>
+								<li class="life__item">Lorem, ipsum dolor.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="hobby">
+				<div class="hobby__container">
+					<h2 class="title">
+						My Hobbies
+						<span class="title__description">Sport in my blood</span>
+					</h2>
+					<div class="hobby__content">
+						<div class="hobby__item">
+							<img
+								src="./images/hobby-wrestle.png"
+								alt=""
+								class="hobby__image"
+							/>
+							<div class="hobby__title">Wrestling</div>
+						</div>
+						<div class="hobby__item">
+							<img src="./images/hobby-box.png" alt="" class="hobby__image" />
+							<div class="hobby__title">Boxing</div>
+						</div>
+						<div class="hobby__item">
+							<img
+								src="./images/hobby-football.jpg"
+								alt=""
+								class="hobby__image"
+							/>
+							<div class="hobby__title">Football</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="contact__container">
+					<h2 class="title">
+						Contact Me
+						<span class="title__description"
+							>Get in touch via contact form or email us directly.</span
+						>
+					</h2>
+					<div class="contact__block">
+						<div class="contact__wrapper-photo-links-social">
+							<div class="contact__wrapper-photo-links">
+								<div class="contact__photo">
+									<img src="./images/photo.jpg" alt="" class="contact__image" />
+								</div>
+								<div class="contact__links">
+									<a
+										href="mailto:Vanzhula.oleg@gmail.com"
+										class="contact__link"
+									>
+										<img
+											src="./images/icon-email.png"
+											alt=""
+											class="contact__link-icon"
+										/>
+										<span class="contact__link-text"
+											>Vanzhula.oleg@gmail.com</span
+										>
+									</a>
+									<a href="skype:Oleg Vanzhula?chat" class="contact__link">
+										<img
+											src="./images/icon-skype.png"
+											alt=""
+											class="contact__link-icon"
+										/>
+										<span class="contact__link-text">Oleg Vanzhula</span>
+									</a>
+									<a href="tel:+380632770006" class="contact__link">
+										<img
+											src="./images/icon-phone.png"
+											alt=""
+											class="contact__link-icon"
+										/>
+										<span class="contact__link-text">+38 (093) 809 15-89</span>
+									</a>
+								</div>
+							</div>
+							<div class="follow-me">
+								<div class="follow-me__title">Follow me:</div>
+								<div class="follow-me__icons">
+									<a
+										href="/"
+										class="follow-me__link"
+										target="_blank"
+										title="Відкрити мій профіль G+ в новій вкладці"
+										aria-label="Відкрити мій профіль G+ в новій вкладці"
+									>
+										<img src="./images/icon-gmail.png" alt="" />
+									</a>
+									<a
+										href="/"
+										class="follow-me__link"
+										target="_blank"
+										title="Відкрити мій профіль Facebook в новій вкладці"
+										aria-label="Відкрити мій профіль Facebook в новій вкладці"
+									>
+										<img src="./images/icon-facebook.png" alt="" />
+									</a>
+								</div>
+							</div>
+						</div>
+						<form action="" class="contact__form">
+							<div class="form__group">
+								<input
+									id="fieldName"
+									type="text"
+									class="contact__field"
+									placeholder="Ім'я"
+									required
+								/>
+								<!-- <label for="fieldName" class="contact__label">Type your name</label> -->
+							</div>
+							<div class="form__group">
+								<input
+									id="fieldEmail"
+									type="email"
+									class="contact__field"
+									placeholder="Електронна пошта"
+									required
+								/>
+							</div>
+							<div class="form__group">
+								<textarea
+									name="message"
+									id="fieldBody"
+									cols="30"
+									rows="10"
+									class="contact__field contact__field_textarea"
+									placeholder="Напишіть  листа"
+								></textarea>
+							</div>
+							<button class="conatct__btn-send">Надіслати</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			<div class="main__container">
+				<section class="portfolio">
+					<h2 class="title">
+						Portfolio
+						<span class="title__description">My latest work.</span>
+					</h2>
+					<div class="portfolio__list">
+						<div class="portfolio__item" tabindex="0">
+							<img
+								class="portfolio__image"
+								src="./images/thumbnail-1.png"
+								alt=""
+							/>
+							<div class="portfolio__info">
+								<a
+									href="/"
+									class="portfolio__link"
+									title="Відкрити сайт 'site1 site1 site1 site1 site1.by' в новій вкладці"
+									target="_blank"
+									>site1 site1 site1 site1 site1.by</a
+								>
+								<div class="portfolio__details">HTML, CSS, Crossplatform</div>
+								<button class="portfolio__zoom-button material-icons">
+									zoom_out_map
+								</button>
+							</div>
+						</div>
+						<div class="portfolio__item" tabindex="0">
+							<img
+								class="portfolio__image"
+								src="./images/thumbnail-2.png"
+								alt=""
+							/>
+							<div class="portfolio__info">
+								<a
+									href="/"
+									class="portfolio__link"
+									title="Відкрити сайт 'site2.by' в новій вкладці"
+									target="_blank"
+									>site2.by</a
+								>
+								<div class="portfolio__details">HTML, CSS, Crossplatform</div>
+								<button class="portfolio__zoom-button material-icons">
+									zoom_out_map
+								</button>
+							</div>
+						</div>
+						<div class="portfolio__item" tabindex="0">
+							<img
+								class="portfolio__image"
+								src="./images/thumbnail-3.png"
+								alt=""
+							/>
+							<div class="portfolio__info">
+								<a
+									href="/"
+									class="portfolio__link"
+									title="Відкрити сайт 'site3.by' в новій вкладці"
+									target="_blank"
+									>site3.by</a
+								>
+								<div class="portfolio__details">HTML, CSS, Crossplatform</div>
+								<button class="portfolio__zoom-button material-icons">
+									zoom_out_map
+								</button>
+							</div>
+						</div>
+						<div class="portfolio__item" tabindex="0">
+							<img
+								class="portfolio__image"
+								src="./images/thumbnail-4.png"
+								alt=""
+							/>
+							<div class="portfolio__info">
+								<a
+									href="/"
+									class="portfolio__link"
+									title="Відкрити сайт 'sitsite4site4site4e4site4site4.by' в новій вкладці"
+									target="_blank"
+									>sitsite4site4site4e4site4site4.by</a
+								>
+								<div class="portfolio__details">HTML, CSS, Crossplatform</div>
+								<button class="portfolio__zoom-button material-icons">
+									zoom_out_map
+								</button>
+							</div>
+						</div>
+						<div class="portfolio__item" tabindex="0">
+							<img
+								class="portfolio__image"
+								src="./images/thumbnail-5.png"
+								alt=""
+							/>
+							<div class="portfolio__info">
+								<a
+									href="/"
+									class="portfolio__link"
+									title="Відкрити сайт 'site5.by' в новій вкладці"
+									target="_blank"
+									>site5.by</a
+								>
+								<div class="portfolio__details">HTML, CSS, Crossplatform</div>
+								<button class="portfolio__zoom-button material-icons">
+									zoom_out_map
+								</button>
+							</div>
+						</div>
+						<div class="portfolio__item" tabindex="0">
+							<img
+								class="portfolio__image"
+								src="./images/thumbnail-6.png"
+								alt=""
+							/>
+							<div class="portfolio__info">
+								<a
+									href="/"
+									class="portfolio__link"
+									title="Відкрити сайт 'site6.by' в новій вкладці"
+									target="_blank"
+									>site6.by</a
+								>
+								<div class="portfolio__details">HTML, CSS, Crossplatform</div>
+								<button class="portfolio__zoom-button material-icons">
+									zoom_out_map
+								</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">Do you like my awesome site? ;)</footer>
+		<div class="modal modal_hidden" data-cmp="modal">
+			<div class="modal__header">
+				<button class="modal__previous material-icons">arrow_back_ios</button>
+				<button class="modal__close material-icons">close</button>
+				<button class="modal__next material-icons">arrow_forward_ios</button>
+			</div>
+			<div class="modal__content">
+				<div class="modal__title">American-football.ru</div>
+				<div class="modal__description">Makeup, Integration to Wordpress</div>
+				<div class="modal__container">
+					<div class="modal__content">
+						<p>
+							Quest Research is a passive talent sourcing firm providing
+							specialist recruitment research services. I redesigned their brand
+							and website to give it a bit of a refresh.
+						</p>
+						<time class="modal__published-date" datetime="2014-11"
+							>November 2014</time
+						>
+						<ul class="modal__label-list">
+							<li class="modal__label">Html 5</li>
+							<li class="modal__label">CSS 3</li>
+							<li class="modal__label">Responsive</li>
+						</ul>
+					</div>
+					<div class="modal__image">
+						<picture class="modal__picture">
+							<source
+								media="(min-width: 1024px)"
+								srcset="./images/site-preview-1-lg.png"
+							/>
+							<source
+								media="(min-width: 768px) and (max-width: 1023px)"
+								srcset="./images/site-preview-1-md.png"
+							/>
+							<img
+								class="modal__image"
+								src="./images/site-preview-1.png"
+								alt=""
+							/>
+						</picture>
+					</div>
+				</div>
+			</div>
+			<div class="modal__footer">
+				<button class="modal__close material-icons">close</button>
+			</div>
+		</div>
+	</body>
+</html>
